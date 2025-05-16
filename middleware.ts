@@ -11,7 +11,7 @@ export default clerkMiddleware((auth, req) => {
     return; // Allow access to public routes
   }
 
-  auth().protect(); // Protect all other routes
+  auth.protect(); // Protect all other routes
 });
 
 export const config = {
